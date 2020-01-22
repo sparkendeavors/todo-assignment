@@ -1,0 +1,11 @@
+<table class="table table-hover">
+  <thead>
+    <th>Your Todo List</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todos of list">
+      <td (click)="onEdit(todos)">{{todos.mytodo}}</td>
+      <td><a class="btn text-danger" (click)="onDelete(todos.id)" text-right><i class="fa fa-trash"></i></a></td>
+    </tr>
+  </tbody>
+</table>
